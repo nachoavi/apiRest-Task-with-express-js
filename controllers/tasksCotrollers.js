@@ -43,7 +43,14 @@ export class tasksControllers {
   static updateTask = async (req, res) => {
     const { id } = req.params;
     const { title, priority } = req.body;
-    const task = await taskModel.updateTask(id, { title, priority });
+    const dataTaskToKeep = await taskModel.getTaskById(id);
+    const task = await taskModel.updateTask(id, {
+      id: dataTaskToKeep.id,
+      title,
+      completed: dataTaskToKeep.completed,
+      priority,
+      dueDate: dataTaskToKeep.dueDate,
+    });
     if (!task) {
       return res.status(404).json("Task not found");
     }
