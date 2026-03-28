@@ -3,7 +3,7 @@ import { taskModel } from "../models/taskModel.js";
 export class tasksControllers {
   static getAllTask = async (req, res) => {
     const { limit, offset, completed, priority } = req.query;
-    const tasks = taskModel.getAllTask(completed, priority);
+    const tasks = await taskModel.getAllTask(completed, priority);
     if (!tasks) {
       return res.status(404).json({ message: "Task not found" });
     }
