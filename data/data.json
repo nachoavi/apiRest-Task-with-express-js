@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "title": "Terminar API de tareas",
+    "completed": false,
+    "priority": "high",
+    "dueDate": "2026-03-30"
+  },
+  {
+    "id": 2,
+    "title": "Estudiar middlewares en Express",
+    "completed": true,
+    "priority": "medium",
+    "dueDate": "2026-03-25"
+  },
+  {
+    "id": 3,
+    "title": "Hacer ejercicio",
+    "completed": false,
+    "priority": "low",
+    "dueDate": "2026-04-01"
+  },
+  {
+    "id": 4,
+    "title": "Leer sobre JWT",
+    "completed": false,
+    "priority": "high",
+    "dueDate": "2026-03-27"
+  },
+  {
+    "id": 5,
+    "title": "Practicar lógica de programación",
+    "completed": true,
+    "priority": "medium",
+    "dueDate": "2026-03-20"
+  },
+  {
+    "id": 6,
+    "title": "Actualizar CV",
+    "completed": false,
+    "priority": "high",
+    "dueDate": "2026-03-29"
+  },
+  {
+    "id": 7,
+    "title": "Subir proyecto a GitHub",
+    "completed": true,
+    "priority": "medium",
+    "dueDate": "2026-03-22"
+  },
+  {
+    "id": 8,
+    "title": "Aprender deploy en Vercel",
+    "completed": false,
+    "priority": "high",
+    "dueDate": "2026-03-31"
+  },
+  {
+    "id": 9,
+    "title": "Revisar errores del proyecto",
+    "completed": false,
+    "priority": "medium",
+    "dueDate": "2026-03-28"
+  },
+  {
+    "id": 10,
+    "title": "Organizar semana de estudio",
+    "completed": true,
+    "priority": "low",
+    "dueDate": "2026-03-18"
+  }
+]
