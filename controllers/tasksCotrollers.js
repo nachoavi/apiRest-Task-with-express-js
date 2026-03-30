@@ -19,6 +19,14 @@ export class tasksControllers {
     return res.json(task);
   };
 
+  static getLapsedTask = async (req, res) => {
+    const tasks = await taskModel.getLapsedTask();
+    if (tasks.length === 0) {
+      return res.status(404).json({ message: "Task not found" });
+    }
+    return res.json(tasks);
+  };
+
   static createTask = async (req, res) => {
     const { title, priority } = req.body;
     if (!title && !priority) {

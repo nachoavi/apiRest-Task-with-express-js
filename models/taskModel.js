@@ -17,6 +17,17 @@ export class taskModel {
     return tasks.find((task) => task.id === Number(id));
   };
 
+  static getLapsedTask = async () => {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    return tasks.filter((task) => {
+      const dueDate = new Date(task.dueDate + "T00:00:00");
+
+      return dueDate < today && task.completed === false;
+    });
+  };
+
   static createTask = async (task) => {
     tasks.push(task);
     return task;
